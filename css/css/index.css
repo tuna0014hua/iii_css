@@ -1,0 +1,385 @@
+/* 共用 */
+:root {
+  --main-color: #18b8c8;
+  --first-text-color: #6a6a6a;
+  --second-text-color: #07505f;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/bg.jpg") center repeat;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a,
+a:link {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pc {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.mobile {
+  display: none;
+}
+
+/* header 刊頭區 */
+.main_header {
+  width: 100%;
+  height: 230px;
+  background: url("../images/header_l.jpg") bottom repeat-x var(--main-color);
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+.logo img {
+  height: 40px;
+}
+.head_title {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* 刊頭列表區 */
+.main_nav {
+  margin: 25px auto 0px;
+}
+.main_nav ul {
+  display: flex;
+  justify-content: center;
+}
+.main_nav ul a {
+  margin: 0 12px;
+  padding: 8px 20px;
+  color: #0a3b3f;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  font-weight: 600;
+}
+.main_nav ul a:hover,
+.main_nav ul li.active a {
+  background: #fff000;
+  border-radius: 25px;
+}
+
+/* 右側icon區 */
+.icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/m_menu.png");
+}
+.icon.home {
+  background-position: 3px 73px;
+  background-color: #045360;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  right: 1%;
+}
+.icon.home:hover {
+  background-position: 3px 37px;
+  cursor: pointer;
+}
+.icon.fb {
+  background-position: 3px 145px;
+  background-color: #045360;
+  border-radius: 50%;
+  position: absolute;
+  top: 53%;
+  right: 1%;
+}
+.icon.fb:hover {
+  background-position: 3px 109px;
+  cursor: pointer;
+}
+.icon.buger {
+  background-position: 3px 2px;
+  background-color: #045360;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  right: 1%;
+}
+
+/* main內文 */
+.main_container {
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* sec01 青春應援團!====================*/
+.sec01 {
+  margin-bottom: 5%;
+}
+/* 內文區 */
+.text_container {
+  background: url("../images/hat.png") no-repeat;
+  background-position: 160px 24px;
+}
+.txt {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: var(--first-text-color);
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/*sec02~05 內文區共用區塊 */
+.areaContent {
+  position: relative;
+  margin-bottom: 10%;
+}
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: #208597;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 500;
+  padding-top: 16px;
+  position: absolute;
+  left: 3%;
+  top: -50px;
+  margin: 0 0 0 -5px;
+}
+.text_box {
+  max-width: 87%;
+  background-color: #fff;
+  border: 1px solid #18b8c6;
+  box-shadow: 0 0 5px #333;
+  border-radius: 30px;
+  padding: 25px 40px 20px 55px;
+  text-align: left;
+  margin: 0 auto;
+}
+.text_box > .firstTxt {
+  color: var(--second-text-color);
+}
+.text_box > .firstTxt > .secondTxt {
+  color: var(--first-text-color);
+}
+
+/* sec02 活動時間===================== */
+.girl01 {
+  position: absolute;
+  right: 90px;
+  bottom: 30px;
+}
+
+/* sec03 賽程說明===================== */
+.girl02 {
+  position: absolute;
+  left: 15px;
+  bottom: 50px;
+}
+.txtLine {
+  text-decoration: underline;
+  line-height: 2.2em;
+}
+.vote_way {
+  text-align: right;
+}
+
+/* sec04 活動資格===================== */
+.nullContent {
+  height: 200px;
+}
+
+/* sec05 注意事項===================== */
+.noticeList {
+  line-height: 28px;
+  text-align: justify;
+  font-size: 15px;
+}
+.noticeList > li {
+  padding: 10px 0px;
+  color: var(--first-text-color);
+}
+.noticeList > li > span {
+  padding-right: 10px;
+  color: var(--second-text-color);
+}
+.noticeTxt {
+  color: #1f8496;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+/* footer============================ */
+.main_footer {
+  background: #000;
+  /* margin-bottom: 150px; */
+}
+.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.unit {
+  width: 60px;
+  height: 60px;
+  background: #5e5e5e;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 12px;
+  margin: 0px 10px;
+  font-size: 15px;
+}
+.sponsorLogo {
+  margin-right: 8px;
+  padding: 10px;
+}
+.sponsorLogo img {
+  height: 50px;
+}
+.copyright {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* rwd============================== */
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* 共用區 */
+  .pc {
+    display: none;
+  }
+  .mobile {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* header 刊頭區 */
+  .main_header {
+    height: 220px;
+  }
+  .logo {
+    left: 3%;
+  }
+  .logo img {
+    height: 30px;
+  }
+  .head_title img {
+    max-width: 100%;
+    margin-top: 35px;
+  }
+
+  /* 刊頭列表區 */
+  .main_nav {
+    display: none;
+  }
+
+  /* 右側icon區 */
+  .icon.buger {
+    top: 7%;
+    right: 3%;
+  }
+
+  /* main內文區 */
+  .main_container {
+    margin-top: 15px;
+  }
+
+  /* sec01 青春應援團!====================*/
+  /* 內文區 */
+  .text_container {
+    background: transparent;
+  }
+  .txt {
+    width: 100%;
+    margin: 15px 0 60px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  /*sec02~05 內文區共用區塊 */
+  .areaContent {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  .circle {
+    margin: 0 0 0 -16px;
+    left: 43%;
+    top: -50px;
+  }
+  .text_box {
+    max-width: 93%;
+    padding: 55px 15px 30px 20px;
+    text-align: left;
+  }
+  .text_box > .firstTxt > .secondTxt {
+    display: block;
+    padding-top: 8px;
+  }
+
+  /* sec02 活動時間、sec03 賽程說明===================== */
+  .girl01,
+  .girl02 {
+    display: none;
+  }
+  .txtLine {
+    line-height: 1.5em;
+  }
+
+  /* footer */
+  /* .main_footer {
+    margin-bottom: 50px;
+  } */
+  .sponsor {
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+  }
+  .unit {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 8px;
+    border-radius: 0;
+    font-size: 18px;
+    clear: both;
+  }
+  .unit > br {
+    display: none;
+  }
+  .sponsorLogo {
+    margin: 0;
+    width: 50%;
+    border-right: 1px solid #5e5e5e;
+    border-bottom: 1px solid #5e5e5e;
+    float: left;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+}

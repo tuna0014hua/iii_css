@@ -1,0 +1,511 @@
+:root{
+    --main-color: rgb(255, 150, 200);
+    --main-btn-color: rgb(238, 95, 164);
+    --main-btn-color-hover: rgb(187,38,110);
+}
+body{
+    background: #fff;
+}
+.btn-danger{
+    background: var(--main-btn-color);
+    border: 1px solid var(--main-btn-color);
+}
+.btn-danger:hover, .btn-danger:focus{
+    background: var(--main-btn-color-hover);
+    border: 1px solid var(--main-btn-color-hover);
+}
+.main-header{
+    background: #fff;
+    padding: 5px 0;
+}
+.logo{
+    height: 48px;
+    margin-top: 15px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    height: 100%;
+}
+.menu a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #666;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+.menu a:hover{
+    background: #ededed;
+}
+
+/*搜尋欄區*/
+.banner{
+    min-height: 80vh;
+    background: url("../images/long-hair.jpg") center center no-repeat;
+    background-size: cover;
+}
+.banner-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+}
+.banner-con{
+    z-index: 2;
+}
+.slogan{
+    padding-top: 50px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.logo-big{
+    filter: brightness(1.75);
+}
+.search-area{
+    border: 2px solid var(--main-color);
+    padding: 2px;
+    max-width: 540px;
+    margin: 0 auto;
+    color: #fff;
+}
+.search-area .btn{
+    border-radius: 0;
+}
+.search-place{
+    border-right: 2px solid var(--main-color);
+    padding: 0 10px;
+}
+.search-input{
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: #fff;
+    height: 39px;
+}
+.feature{
+    margin-top: 30px;
+    padding: 40px 0;
+    background: url("../images/bg_icon.png");
+}
+.feature img{
+    width: 160px;
+}
+
+/*熱門主題區*/
+.popular{
+    position: relative;
+}
+.popular h2::before{            
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #000;            
+    position: absolute;
+    left: 50%;
+    top: 10.5%;
+    transform: translateX(-50%);
+}
+
+.popularCard{
+    width: calc((100% - 25%) / 4);
+    height: 280px;
+    /* margin-right: 3px; */
+}
+.cover-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.popularCardTxt{
+    width: 110px;
+    height: 35px;
+    background: rgba(255, 255, 255, .7);
+    border: 2px solid rgb(201, 21, 81);
+    bottom: 3%;
+    left: 58%;
+    line-height: 28px;
+    color: rgb(201, 21, 81);
+    letter-spacing: 5px;
+    transform: translate(1%,10%);            
+    z-index: 2;
+}
+.btnMore{
+    position: relative;
+    right: 12.5%;
+}
+
+/*人氣設計師*/
+.hito{
+    display: none;
+    position: relative;
+}
+.hito h2::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #000;            
+    position: absolute;
+    left: 52%;
+    top: 5%;
+    transform: translate(-52%, -5%);
+}
+.hito .col-6 figure{
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    border-radius: 50%; 
+           
+}
+.hito .col-6 figcaption{
+    width: 100%;
+    position: absolute;
+    color: #fff;  
+    top: 80%;
+    right: 0%;
+    text-align: center;
+    text-shadow: 1px 1px #333;
+}
+.hitoCard p{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+/*趨勢主題*/
+.trend{
+    position: relative;
+}
+.trend h2::before{            
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #000;            
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+}
+.trendCard{
+    width: calc((100% - 25%) / 3);
+    height: 200px;
+    margin-right: 3px;
+}
+.trendCardTxt{
+    width: 93%;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 1px 1px #333;   
+}
+
+/*footer*/
+.footerbg{
+    background: rgb(216, 216, 216);
+    margin-top: 3%;
+}
+.fastHair{
+    margin-top: 5%;
+    position: relative;
+}
+.fastHair h2::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #000;            
+    position: absolute;
+    left: 28%;
+    top: 20.5%;
+    transform: translate(-50%, -20%);
+}
+/*footerUp*/
+.footerUp{
+    height: 33vh;
+}
+.leftPhone{
+    height: 33vh;
+}
+.fastTxt{
+    color: var(--main-btn-color-hover);
+    font-size: 14px;
+}
+/*footerMid*/
+.footerMid{
+    background: url("../images/slide2.jpg") center center no-repeat;
+    min-height: 280px;
+    background-size: cover;
+}
+.footerMidMsak{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;            
+}
+.footerMid_con{
+    z-index: 5;
+}
+/*footerMidUp*/
+.footerMidUp .footerMidTxt{
+    margin: 3% 0;
+    padding: 0 4%;
+}
+.dott{
+    margin-top: 4%;
+    border: 2px dotted #fff;
+    height: 100px;
+}
+.footerMidUp .footerMidTxt li{
+    color: #fff;
+    text-shadow: 2px 2px #333;
+}
+.bigTxt{
+    font-size: 50px;
+}
+/*footerMidDown*/
+.footerMidDown h2{
+    padding-right: 20px;
+}
+.footerMidDown h2::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #fff;            
+    position: absolute;
+    left: 38%;
+    top: 80%;
+    transform: translate(-38%, -80%);
+}
+.footerMidDown a{
+    width: 130px;
+    height: 40px;
+    text-decoration: none;
+    background-color: rgb(194, 194, 194);
+    opacity: .7;
+    text-align: center;
+    color: #000;
+    line-height: 40px;
+    margin-right: 30px;
+    border-radius: 5px;
+    text-shadow: 1px 1px #fff;
+}
+.footerMidDown a:hover{
+    opacity: 1;
+}
+/*footerDown*/
+.footerDown{
+    margin-top: 3%;
+}
+.footerDownLeft{
+    width: 380px;
+}
+.footerDownLeft .cover-fit{
+    width: 40px;
+    height: 40px;
+}
+.footerDownLeft p{
+    font-size: 13px;
+    padding: 0 2%;
+} 
+/*footerDownMid*/
+.footerDownMid ul{
+    width: 231px;
+}
+.footerDownMid ul li{
+    margin-right: 5%;
+    /* width: 90px; */
+}
+.footerDownMid ul li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.footerDownMid ul li p{
+    font-size: 13px;
+}
+/*footerDownMidRight*/
+.footerDownMidRight a{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .7);
+    border: 2px solid var(--main-btn-color-hover);
+    color: var(--main-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -40px
+}
+.footerDownMidRight a:hover{
+    background-color: var(--main-btn-color-hover);
+    color: #fff;
+}
+.footerDownMidRight a i{
+    margin-right: 5px;
+}
+/*footerEnd*/
+.footerEnd{
+    margin: 0 auto;
+    width: 90%;
+    border-top: 2px solid rgb(146, 146, 146);
+}
+.footerEnd p {
+    font-size: 13px;
+}
+.footerEnd p br {
+    display: none;
+}
+
+/*===rwd======*/
+@media screen and (max-width: 576px) {
+    .menu{
+        display: none;
+    }
+    .search-area{
+        width: 90%;
+        flex-wrap: wrap;
+        height: 46px;
+        margin-bottom: 66px;
+    }
+    .search-area .btn{
+        width: 100%;
+        text-align: center;
+        margin-top: 6px;
+    }
+    /*熱門主題區*/
+    .popular h2::before{  
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+    }
+    .popularCard{
+        width: 50%;
+        padding-top: 5%;
+    }
+    .popularCardTxt{
+        width: 85px;
+        letter-spacing: 0;
+        left: 52%;
+    }
+    .btnMore{
+        right: 0%;
+    }
+
+    /*人氣設計師*/
+    .hito{
+        display: block;
+    }
+    .hito .col-6 figure{
+        margin-top: 5%;
+               
+    }
+    .hito .col-6 figcaption{
+        top: 48%;
+        right: 5%;
+    }
+    
+
+    /*趨勢主題*/
+    .trend h2::before{  
+        top: 5%;
+    }
+    .trendCard{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    /*footer*/
+    .fastHair{
+        margin-top: 15%;
+        margin-left: -13%;
+    }
+    .fastHair h2::before{
+        left: 45%;
+        top: 20%;
+        transform: translate(-45%, -20%);
+    }
+    /*footerUp*/
+    .footerUp{
+        margin-top: 50px;
+        height: 33vh;
+    }
+    .leftPhone{
+        width: 100%;
+        height: 40vh;
+    }
+    .fastTxt{
+        display: none;
+    }
+    
+    /*footerMidUp*/
+    .footerMidUp .footerMidTxt{
+        margin: 5% 0;
+        width: 100%;
+    }
+    .dott{
+        display: none;
+    }
+    .footerMidUp .footerMidTxt li{
+        color: #fff;
+        width: 100%;
+        text-shadow: 2px 2px #333;
+    }
+
+    /*footerMidDown*/
+    .footerMidDown h2{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .footerMidDown h2::before{
+        left: 38%;
+        top: 33%;
+        transform: translate(-38%, -38%);
+    }
+    .footerMidDown a{
+        margin: 5% 3%;
+    }
+
+    /*footerDown*/
+    .footerDown{
+        margin-top: 6%;
+    }
+    .footerDownLeft{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*footerDownMid*/
+    .footerDownMid ul{
+        width: 100%;
+        margin: 0 75px;
+    }
+    .footerDownMid ul li{
+        margin-right: 0%;
+        width: 110px;
+    }
+    /*footerDownMidRight*/
+    
+    .footerDownMidRight a{
+        width: 300px;
+        margin-left: 0;
+    }
+
+    /*footerEnd*/
+    .footerEnd{
+        border-top: 0px;
+    }
+    .footerEnd p {
+        text-align: center;
+    }
+    .footerEnd p br {
+        display: block;
+    }
+}
